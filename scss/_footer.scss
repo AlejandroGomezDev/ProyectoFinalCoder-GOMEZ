@@ -1,0 +1,59 @@
+.footer{
+    grid-area: footer;
+    cursor: default;
+    border-top: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .footer__img{
+        transition: all 400ms ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .footer__list{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        .logo-yt{
+            transition: all 400ms ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .logo-ig{
+            transition: all 400ms ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .logo-tw{
+            transition: all 400ms ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .logo-fb{
+            transition: all 400ms ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .logo-ds{
+            transition: all 400ms ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.footer__text{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-size: 1.17em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}

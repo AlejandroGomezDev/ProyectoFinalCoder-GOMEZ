@@ -1,0 +1,30 @@
+.nosotros__contenedor{
+    background-color: #1e1d36;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    .nosotros__historia{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .historia__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 35%;
+            .historia__text1{
+                font-family: 'Anton', sans-serif;
+                color: $text-claro;
+                font-size: 5em;
+                font-weight: 500;
+                line-height: 1em;
+                letter-spacing: 1px;
+                text-shadow: rgb(165, 161, 161) 2px 5px;
+            }
+            .historia__text2{
+                padding-top: 2rem;
+                color: $text-claro;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+}

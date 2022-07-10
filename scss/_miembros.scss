@@ -1,0 +1,42 @@
+.nosotros1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1e1d36;
+    justify-content: space-evenly;
+    padding: 2.5rem 0rem 2.5rem 0rem;
+    .nosotros-text{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .nombre__miembro{
+            font-size: 2.2em;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 3px;
+            color:$text-claro;
+            font-weight: 300;
+        }
+        .text__miembro{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            color: $text-claro;
+        }
+    }
+}
+
+.nosotros2{
+    @extend .nosotros1;
+    background-color: white;
+    .nosotros-text{
+        .nombre__miembro2{
+            @extend .nombre__miembro;
+            color: $text-oscuro;
+        }
+        .text__miembro2{
+            @extend .text__miembro;
+            color: $text-oscuro;
+        }
+    }
+
+}

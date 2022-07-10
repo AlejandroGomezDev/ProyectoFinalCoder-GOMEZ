@@ -1,0 +1,45 @@
+.form__text{
+    font-family: 'Anton', sans-serif;
+        color: $text-oscuro;
+        font-size: 4em;
+        font-weight: 100;
+        line-height: 1em;
+        letter-spacing: 1px;
+        text-shadow: rgb(165, 161, 161) 2px 5px;
+        padding-top: 7rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+}
+
+.form__text2{
+    font-size: 19px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    color:#5B82BE;
+    text-align: center;
+}
+
+form{
+    width: 30%;
+    background-color: #1e1d36;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0px 20px 0px;
+}
+
+#exampleInputNombre1:focus{
+    background-color: aqua;
+}
+
+#exampleInputEmail1:focus{
+    background-color: aqua;
+}
+
+#exampleInputPassword1:focus{
+    background-color: aqua;
+}
+
+textarea:focus{
+    background-color: aqua;
+}

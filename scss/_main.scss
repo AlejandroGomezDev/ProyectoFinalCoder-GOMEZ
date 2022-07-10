@@ -1,0 +1,329 @@
+main{
+    grid-area: main;
+    justify-content: center;
+    .fondo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 1100px;
+        background-image: url(../img/fondo-buena-mono.jpg);
+        text-align: center;
+        .text__fondo{
+            font-family: 'Anton', sans-serif;
+            color: $text-claro;
+            font-size: 9em;
+            font-weight: 100;
+            line-height: 1em;
+            letter-spacing: 1px;
+            margin-top: 30%;
+            text-shadow: rgb(165, 161, 161) 2px 5px;
+        }
+    }
+    .equipo{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        align-items: center;
+
+        .equipo__text{
+            width: 50%;
+            padding: 10px;
+            justify-content: center;
+            h2{
+                font-family: 'Anton', sans-serif;
+                color: $text-oscuro;
+                font-size: 9em;
+                font-weight: 100;
+                line-height: 1em;
+                letter-spacing: 1px;
+                text-shadow: rgb(165, 161, 161) 2px 5px;
+            }
+            p{
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                margin-top: 23px;
+                line-height: 1.5em;
+            }
+            .equipo__boton{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1em;
+                color: #000000;
+                border-style: solid;
+                border-color: #D1D3D4;
+                padding: 15px 0px 13px 0px;
+                transition: all 400ms ease;
+                margin-top: 20px;
+                a{
+                    text-decoration: none;
+                    transition: all 400ms ease;
+                    font-weight: bolder;
+                    padding: 15px 20px 13px 20px;
+                    &:hover{
+                        color: white;
+                        background-color: #000;
+                    }
+                }
+                }
+        }
+        .equipo__img{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            .img1{
+                position: relative;
+                width: 30%;
+            }
+            .img2{
+                position: relative;
+                margin-left: 5px;
+                width: 60%;
+                height: max-content;
+            }
+            .img3{
+                position: relative;
+                width: 50%;
+                margin-top: -50px;
+                margin-left: 15px;
+            }
+            .img4{
+                position: relative;
+                width: 40%;
+                height: max-content;
+                margin-top: 50px;
+            }
+            .img5{
+                position: relative;
+                margin: -150px 0px 0px 30%;
+                width: 60%;
+            }
+        }
+    }
+    .calendario{
+        margin-top: 5px;
+        background-color: #1e1d36;
+        padding: 50px 0px 50px 100px;
+        .calendario__text{
+            font-size: 19px;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            color:#5B82BE;
+        }
+        h2{
+            font-family: 'Anton', sans-serif;
+            color: $text-claro;
+            font-size: 5em;
+            font-weight: 100;
+            text-shadow: rgb(165, 161, 161) 2px 5px;
+        }
+        .calendario__eventos{
+            padding-top: 100px;
+            color: $text-claro;
+            font-family: 'Roboto', sans-serif;
+        }
+
+    }
+    .noticia{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+        padding-top: 20px;
+        .noticia__text{
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 1.5em;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            color:#5B82BE;
+        }
+        .noticia__text2{
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Anton', sans-serif;
+            color: $text-oscuro;
+            font-size: 5em;
+            font-weight: 100;
+            text-shadow: rgb(165, 161, 161) 2px 5px;
+        }
+        .noticia1{
+            background-image: url(../img/img1.jpg);
+            background-size: cover;
+            width: 400px;
+            height: 480px;
+            margin-top: 20px;
+            @include noticias;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+                transform: scale(1.07)
+            }
+            .titulo1{
+                font-family: 'Poppins', sans-serif;    
+                color: $text-claro;
+                text-shadow: -1px 1px 0 #000,
+                                      1px 1px 0 #000,
+                                     1px -1px 0 #000,
+                                    -1px -1px 0 #000;
+                margin-left: 1rem;                    
+            }
+            .titulo2{
+                @extend .titulo1; 
+                font-family: 'Lato', sans-serif;                            
+            }
+            .boton1{
+                font-family: 'Lato', sans-serif;
+                font-size: small;
+                border-radius: 10px;
+                margin-left: 300px;
+                margin-top: 375px    
+            }
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 10px;
+                color: $text-oscuro;
+                transition: all 400ms ease;
+                &:hover{
+                    background-color:black;
+                    color: $text-claro;
+                }
+            }        
+        }
+        .noticia2{
+            background-image: url(../img/img2.jpg);
+            background-size: cover;
+            width: 700px;
+            height: 480px;
+            margin-top: 20px;
+            @include noticias;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                transform: scale(1.07)
+            }
+            .titulo1{
+                font-family: 'Poppins', sans-serif;    
+                color: $text-claro;
+                text-shadow: -1px 1px 0 #000,
+                                      1px 1px 0 #000,
+                                     1px -1px 0 #000,
+                                    -1px -1px 0 #000;
+                margin-left: 1rem;                    
+            }
+            .titulo2{
+                @extend .titulo1; 
+                font-family: 'Lato', sans-serif;                   
+            }
+            .boton2{
+                font-family: 'Lato', sans-serif;
+                font-size: small;
+                border-radius: 10px;
+                margin-left: 590px;
+                margin-top: 375px;
+            }
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 10px;
+                color: $text-oscuro;
+                transition: all 400ms ease;
+                &:hover{
+                    background-color:black;
+                    color: $text-claro;
+                }
+            }
+        }
+        .noticia3{
+            background-image: url(../img/img3.jpg);
+            background-size: cover;
+            width: 700px;
+            height: 480px;
+            margin-bottom: 30px;
+            @include noticias;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                transform: scale(1.07)
+            }
+            .titulo1{
+                font-family: 'Poppins', sans-serif;    
+                color: $text-claro;
+                text-shadow: -1px 1px 0 #000,
+                                      1px 1px 0 #000,
+                                     1px -1px 0 #000,
+                                    -1px -1px 0 #000;
+                margin-left: 1rem;                    
+            }
+            .titulo2{
+                @extend .titulo1; 
+                font-family: 'Lato', sans-serif;                         
+            }
+            .boton2{
+                font-family: 'Lato', sans-serif;
+                font-size: small;
+                border-radius: 10px;
+                margin-left: 590px;
+                margin-top: 375px;
+            }
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 10px;
+                color: $text-oscuro;
+                transition: all 400ms ease;
+                &:hover{
+                    background-color:black;
+                    color: $text-claro;
+                }
+            }
+        }
+        .noticia4{
+            background-image: url(../img/img4.jpg);
+            background-size: cover;
+            width: 400px;
+            height: 480px;
+            margin-bottom: 30px;
+            @include noticias;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                transform: scale(1.07)
+            }
+            .titulo1{
+                font-family: 'Poppins', sans-serif;    
+                color: $text-claro;
+                text-shadow: -1px 1px 0 #000,
+                                      1px 1px 0 #000,
+                                     1px -1px 0 #000,
+                                    -1px -1px 0 #000;
+                margin-left: 1rem;                    
+            }
+            .titulo2{
+                @extend .titulo1; 
+                font-family: 'Lato', sans-serif;                        
+            }
+            .boton1{
+                font-family: 'Lato', sans-serif;
+                font-size: small;
+                border-radius: 10px;
+                margin-left: 300px;
+                margin-top: 375px    
+            }
+            a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 10px;
+                color: $text-oscuro;
+                transition: all 400ms ease;
+                &:hover{
+                    background-color:black;
+                    color: $text-claro;
+                }
+            }
+        }
+    }
+}

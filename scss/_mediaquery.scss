@@ -1,0 +1,180 @@
+/*Inicia responsive para celular*/
+@media screen and (max-width: 400px){
+
+    
+    /* Inicia estilo contenedor responsive*/
+        .contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr 150px;
+            grid-template-areas: 
+            "nav"
+            "main"
+            "footer";
+        }
+    /* Termina estilo contenedor responsive*/
+       
+    /* Inicia estilo navegador responsive */
+    nav  .nav{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "logo" 
+                                 "navBar";
+            .logo{
+                background: linear-gradient(to bottom, black 10%, white );
+                display: flex;
+                justify-content: center;
+                }
+            .nav__list li a{
+                font-size: 1em;
+                }
+        }
+    nav .nav .nav__list{
+        padding-left: 0rem;
+    }
+    
+    /* Termina estilo navegador responsive */
+    
+    /* Inicia estilo main responsive */
+    main .fondo .text__fondo{
+        background-color: #1e1d36;
+        font-size: 5em;
+    }    
+
+    main .equipo .equipo__text{
+        width: 100%;
+    }
+    main .equipo .equipo__text h2{
+        font-size: 5em;
+    } 
+    main .equipo .equipo__img{
+        width: 100%;
+    }
+
+    main .noticia{
+        width: 100%;
+    }
+
+    main  .noticia .noticia1{
+            width: 90%;
+            height: 380px;
+            .boton1{
+                font-size: smaller;
+                width: 100px;
+                height: 30px;
+                margin-left: 70%;
+                margin-top: 280px;
+            }
+        }
+    
+    main  .noticia .noticia2{
+            width: 90%;
+            height: 380px;
+            .boton2{
+                font-size: smaller;
+                width: 100px;
+                height: 30px;
+                margin-left: 70%;
+                margin-top: 280px;
+            }
+        }
+        
+    main  .noticia .noticia3{
+            width: 90%;
+            height: 380px;
+            margin-top: 20px;
+        .boton2{
+            font-size: smaller;
+            width: 100px;
+            height: 30px;
+            margin-left: 70%;
+            margin-top: 280px;
+            }
+        }
+        
+    main  .noticia .noticia4{
+            width: 90%;
+            height: 380px;
+        .boton1{
+            font-size: smaller;
+            width: 100px;
+            height: 30px;
+            margin-left: 70%;
+            margin-top: 280px;
+            }
+        }    
+
+    main .calendario h2{
+        font-size: 2.5em;
+    }    
+    /* Termina estilo main responsive */
+    
+    /* Inicia estilo footer responsive */
+    footer  .footer__img{
+        display: none;
+    }
+    .footer .footer__list{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__text{
+        margin-top: 50px;
+    }
+    /* Termina estilo footer responsive */
+    
+    // Inicia estilo multimedia responsive
+    .videos-text{
+        font-size: 2.5em;
+    }
+
+    .img-bm h2{
+        font-size: 2.5em;
+    }
+
+    .img-bm #carouselExampleIndicators{
+        width: 90%;
+    }
+    // Termina estilo multimedia responsive
+    
+    /* Inicia estilo html miembros responsive */
+        .nosotros{
+        justify-content: center;
+        margin-top: 4rem;
+            .nosotros-text{
+                width: 100%;
+                font-size: smaller;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                }
+        }
+    /* Termina estilo html miembos responsive */
+    
+    /* Inicia estilo html sobre nosotros responsive */
+    .nosotros__contenedor .nosotros__historia iframe{
+        width: 390px;
+        height: 200px;
+    }
+    .nosotros__contenedor .nosotros__historia img{
+        width: 100%;
+    }
+    .nosotros__contenedor .nosotros__historia .historia__text{
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 25px;
+    }
+    .nosotros__contenedor .nosotros__historia .historia__text .historia__text1{
+        font-size: 2.5em;
+        padding-left: 10px;
+    }
+    /* Termina estilo html sobre nosotros responsive */
+    
+    /* Inicia estilo en contactos*/
+        form{
+        width: 95%;
+        }
+    /* Termina estilo en contactos */
+    }
+    /* Termina responsive para celular */
